@@ -1,5 +1,5 @@
 function computerPlay() {
-    let rand = Math.floor(Math.random()*10)%3;
+    let rand = Math.floor(Math.random())%3;
     switch(rand) {
         case 0:
             return 'rock';
@@ -39,7 +39,7 @@ function game() {
     rounds = 5;
     for(let i=0; i<rounds; ++i) {
         console.log(`round ${i+1}`);
-        let playerSelection = prompt("choose between rock, paper, and scissor");
+        let playerSelection = prompt('choose between rock, paper, and scissor');
         console.log(playRound(playerSelection, computerPlay()));
     }
 }
