@@ -28,7 +28,8 @@ function playRound(playerSelection, computerSelection) {
         computerSelection === 'scissor' && playerSelection === 'paper'
     ) {
         return `Computer wins! ${computerSelection} beats ${playerSelection}`;
-    } else {
+    }
+    else if(computerSelection === playerSelection) {
         return `Tie game! ${playerSelection} and ${computerSelection}`;
     }
     return 'You typed something else, didn\'t you?';
