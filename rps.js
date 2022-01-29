@@ -1,6 +1,7 @@
 const COLOR_DEFAULT = 'rgb(206, 206, 206)';
 const COLOR_RED = '#FF7777';
 const COLOR_GREEN = '#88E385';
+const MAX_SCORE = 5;
 
 const mainMenu = document.querySelector('.main');
 const buttons = document.querySelectorAll('.button');
@@ -76,10 +77,10 @@ function playRound(event) {
      */
     updateTitleStatus();
 
-    if (playerScore === 3) {
+    if (playerScore === MAX_SCORE) {
         appendGameMessage("<br><strong>Computer:</strong> You win this time.", COLOR_GREEN);
     }
-    else if (cpuScore === 3) {
+    else if (cpuScore === MAX_SCORE) {
         appendGameMessage("<br><strong>Computer:</strong> Incompetent Human.", COLOR_RED);
     }
     else {
