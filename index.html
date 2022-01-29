@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html land="en">
-    <head>
-        <meta charset="utf-8">
-        <title>rock paper scissor</title>
-    </head>
-    <body>
-        <script src="rps.js"></script> 
-        <h1>rock paper scissor game v1</h1>
-        <p>this is a rock paper scissor game on the console</p> 
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="rps.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>rock paper scissor</title>
+</head>
+
+<body>
+    <div class='main'>
+        <h1 class="title">Rock Paper Scissor Time-Machine</h1>
+        <div class="opponent">
+            <img src="img/computer.png">
+            <div>
+                <p class="game-msg"></p>
+                <div class="buttons">
+                    <button class="button play">Yes</button>
+                    <button class="button lose">No</button>
+                    <button class="button next hidden">Next</button>
+                    <button class="button mainmenu hidden">Main Menu</button>
+                </div>
+            </div>
+        </div>
+        <div class="moves">
+            <div class="move" id="rock">
+                <img src="img/rock.png" class="img">
+                <p><strong>Rock:</strong> Beats Scissor</p>
+            </div>
+            <div class="move" id="paper">
+                <img src="img/paper.png" class="img">
+                <p><strong>Paper:</strong> Beats Rock</p>
+            </div>
+            <div class="move" id="scissor">
+                <img src="img/scissor.png" class="img">
+                <p><strong>Scissor:</strong> Beats Paper</p>
+            </div>
+            <div class="move" id="time-machine">
+                <img src="img/time-machine.png" class="img">
+                <p><strong>Time-Machine:</strong> Opponent's throw is played against his previous throw</p>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
