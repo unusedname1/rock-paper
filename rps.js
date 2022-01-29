@@ -23,9 +23,7 @@ initialize();
 
 function initialize() {
     setupMainMenuDialog();
-
     activateButtonEffects(buttons);
-    
     activateButton(playButton, setupRound);
     activateButton(loseButton, loseGame);
     activateButton(nextButton, goNextRound);
