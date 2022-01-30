@@ -81,7 +81,7 @@ function playRound(event) {
         appendGameMessage("<br><strong>Computer:</strong> You win this time.", COLOR_GREEN);
     }
     else if (cpuScore === MAX_SCORE) {
-        appendGameMessage("<br><strong>Computer:</strong> Incompetent Human.", COLOR_RED);
+        appendGameMessage("<br><strong>Computer:</strong> Incompetent human.", COLOR_RED);
     }
     else {
         show(nextButton);
@@ -204,7 +204,7 @@ function loseGame() {
     hide(playButton);
     hide(loseButton);
     clearGameMessage();
-    appendGameMessage("<strong>Computer:</strong> Incompetent Human.", COLOR_RED);
+    appendGameMessage("<strong>Computer:</strong> Incompetent human.", COLOR_RED);
 }
 
 function activateButtonNodes(buttons, func) {
