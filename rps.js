@@ -162,7 +162,7 @@ function checkRound(cpuMove, playerMove) {
         cpuMove === 'paper' && playerMove === 'rock' ||
         cpuMove === 'scissor' && playerMove === 'paper') {
 
-        appendGameMessage(`Computer wins! ${playerMove} beats ${cpuMove}.`);
+        appendGameMessage(`Computer wins! ${cpuMove} beats ${playerMove}.`);
 
         return 'cpu';
     }
